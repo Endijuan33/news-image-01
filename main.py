@@ -1,9 +1,11 @@
 import os
 import shutil
 
-# Entry image: THE WORLD front page for Friday 13 November 2026 — lead
-# story Hormuz plus six verified stories. The program only copies the
-# committed image bytes, so both runs write exactly the same file.
+# Entry image: THE WORLD front page v2 for Friday 13 November 2026 — lead
+# story Hormuz (no disputed tanker count) plus six verified stories incl.
+# the Trump-Xi-Putin summit (first-ever three-way meeting, Shenzhen Nov 19).
+# The program only copies the committed image bytes, so both runs write
+# exactly the same file.
 OUT = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 os.makedirs(OUT, exist_ok=True)
 shutil.copyfile(
